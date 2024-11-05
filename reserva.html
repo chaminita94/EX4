@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rural Rooms - Reserva</title>
     <link rel="stylesheet" href="estilos.css">
-    <style>
-
-    </style>
 </head>
 
 <body>
@@ -38,7 +35,7 @@
                         <option value="Sra">Sra</option>
                         <option value="Srta">Srta</option>
                     </select>
-        
+
                     <input type="text" id="firstName" name="firstName" placeholder="Nombre (Ej: Juan)" required>
                     <input type="text" id="lastName" name="lastName" placeholder="Apellidos (Ej: Pérez)" required>
                     <input type="tel" id="phone" name="phone" placeholder="Teléfono (Ej: 612345678)" required>
@@ -46,17 +43,18 @@
                     <input type="email" id="confirmEmail" name="confirmEmail" placeholder="Confirma el correo electrónico" required>
                     <input type="password" id="password" name="password" placeholder="Contraseña (Ej: contraseña123)" required>
                 </div>
-        
+
                 <div class="form-group">
                     <h2>Datos de la reserva</h2>
                     <label for="roomType">Tipo de habitación:</label>
                     <select id="roomType" name="roomType" required>
+                        <option value="" disabled selected hidden>Selecciona un tipo de habitación</option>
                         <option value="individual">Habitación individual</option>
                         <option value="doble">Habitación doble</option>
                         <option value="doble_superior">Habitación doble superior</option>
                         <option value="triple">Habitación triple</option>
                     </select>
-        
+
                     <input type="number" id="numPeople" name="numPeople" placeholder="Número de personas (Ej: 2)" required min="1">
                     <input type="date" id="checkIn" name="checkIn" required>
                     <input type="date" id="checkOut" name="checkOut" required>
@@ -68,7 +66,7 @@
                 
                 <div class="form-group" style="flex-basis: 100%; margin-top: 20px;">
                     <h3>Opciones adicionales</h3>
-        
+
                     <p>El hotel dispone de parking exterior gratuito.</p>
                     
                     <div class="radio-group">
@@ -84,7 +82,8 @@
                         <input type="checkbox" id="breakfast" name="breakfast">
                         <label for="breakfast">Sí</label>
                     </div>
-                    
+                </div>
+
                 <button type="submit" class="form-submit">Enviar Reserva</button>
             </form>
         </section>       
@@ -93,7 +92,7 @@
         <p>Activitat realitzada per <strong>Vitaliy Domin</strong></p>
         <p>Fotografia de la portada <a href="https://unsplash.com/" target="_blank">Unsplash</a>
             <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
-                <img src="img/creative-commons.png" style="height: 40px;">
+                <img src="img/creative-commons.png" alt="Creative Commons License" style="height: 40px;">
             </a>
         </p>
     </footer>
