@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rural Rooms - Reserva</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/RRLogo.png" alt="Rural Rooms Logo" style="height: 50px;">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inici</a></li>
+                <li><a href="precios.html">Preus</a></li>
+                <li><a href="reserva.html" class="active">Reserva</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="background">
+            <h1>Reserva su habitación en Rural Rooms</h1>
+            <form action="#" method="POST" class="form-container">
+                <div class="form-group">
+                    <h2>Datos personales</h2>
+                    <label for="treatment">Tratamiento:</label>
+                    <select id="treatment" name="treatment">
+                        <option value="Sr">Sr</option>
+                        <option value="Sra">Sra</option>
+                        <option value="Srta">Srta</option>
+                    </select>
+        
+                    <input type="text" id="firstName" name="firstName" placeholder="Nombre (Ej: Juan)" required>
+                    <input type="text" id="lastName" name="lastName" placeholder="Apellidos (Ej: Pérez)" required>
+                    <input type="tel" id="phone" name="phone" placeholder="Teléfono (Ej: 612345678)" required>
+                    <input type="email" id="email" name="email" placeholder="Correo electrónico (Ej: correo@ejemplo.com)" required>
+                    <input type="email" id="confirmEmail" name="confirmEmail" placeholder="Confirma el correo electrónico" required>
+                    <input type="password" id="password" name="password" placeholder="Contraseña (Ej: contraseña123)" required>
+                </div>
+        
+                <div class="form-group">
+                    <h2>Datos de la reserva</h2>
+                    <label for="roomType">Tipo de habitación:</label>
+                    <select id="roomType" name="roomType" required>
+                        <option value="individual">Habitación individual</option>
+                        <option value="doble">Habitación doble</option>
+                        <option value="doble_superior">Habitación doble superior</option>
+                        <option value="triple">Habitación triple</option>
+                    </select>
+        
+                    <input type="number" id="numPeople" name="numPeople" placeholder="Número de personas (Ej: 2)" required min="1">
+                    <input type="date" id="checkIn" name="checkIn" required>
+                    <input type="date" id="checkOut" name="checkOut" required>
+                    <textarea class="special-requests" id="specialRequests" name="specialRequests" rows="4" placeholder="Peticiones especiales (Ej: cama supletoria)"></textarea>
+                </div>
+                
+                <label for="arrivalTime">Hora prevista de llegada:</label>
+                <input type="time" id="arrivalTime" name="arrivalTime" required>
+                
+                <div class="form-group" style="flex-basis: 100%; margin-top: 20px;">
+                    <h3>Opciones adicionales</h3>
+        
+                    <p>El hotel dispone de parking exterior gratuito.</p>
+                    
+                    <div class="radio-group">
+                        <label>Parking cubierto:</label>
+                        <input type="checkbox" id="parking" name="parking">
+                        <label for="parking">Reservar plaza de parking (8€/noche)</label>
+                    </div>
+                    
+                    <p>¿Quieres añadir también el desayuno?:</p>
+                    
+                    <div class="radio-group">
+                        <label>Añadir desayuno (5€/día):</label>
+                        <input type="checkbox" id="breakfast" name="breakfast">
+                        <label for="breakfast">Sí</label>
+                    </div>
+                    
+                <button type="submit" class="form-submit">Enviar Reserva</button>
+            </form>
+        </section>       
+    </main>
+    <footer>
+        <p>Activitat realitzada per <strong>Vitaliy Domin</strong></p>
+        <p>Fotografia de la portada <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+            <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+                <img src="img/creative-commons.png" style="height: 40px;">
+            </a>
+        </p>
+    </footer>
+</body>
+
+</html>
