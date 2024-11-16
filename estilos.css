@@ -7,6 +7,10 @@
 
 body {
     font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, white, lightgray, darkgray);
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 60px; /* Add padding to ensure content doesn't overlap footer */
 }
 
 header {
@@ -67,14 +71,15 @@ nav ul li a.active {
     text-align: left;
 }
 
-
 footer {
     background-color: #4b8b1b;
     color: black;
     text-align: left;
     padding: 10px 20px;
     font-size: 14px;
-
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 footer p a {
@@ -149,7 +154,6 @@ tr.doble td {
     color: black;
 }
 
-
 /* form starts here */
 .form-container {
     width: 60%; 
@@ -221,4 +225,3 @@ button.form-submit {
     color: #fff; 
     cursor: pointer; 
 }
-
